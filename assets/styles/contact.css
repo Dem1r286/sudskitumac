@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+} 
+body {
+    margin: 0;
+}
+
+/* Section styling */
+
+.container {
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.section {
+    background-color: #111518;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    border: 1px solid #111518;
+    border-radius: 20px;
+    height: 60vh;
+    width: 60vw;
+    box-shadow: 8px 5px 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h1 {
+    margin: 70px 0 20px 0;
+    letter-spacing: 5px;
+    font-size: 23px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-number,
+.contact-email,
+.contact-fb {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    gap: 30px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.section img {
+    width: 35px;
+}
+.contact-fb a {
+    text-decoration: none;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.contact-paragraph {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 25px 0;
+}
+
+/* Footer-navigation styling */
+
+.footer-navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    background-color: #243B55;
+    color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.footer-navigation h2 {
+    margin: 20px 0 20px 0;
+    font-size: 16px;
+    letter-spacing: 6px;
+}
+.navigation-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0 15px 0 15px;
+    font-size: 14px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1920px) {
+    .section {
+        width: 1000px;
+        height: 700px;
+    }
+    .section h1 {
+        font-size: 27px;
+        margin-top: 60px;
+    }
+    .contact-number,
+    .contact-email,
+    .contact-fb {
+        margin: 20px;
+        gap: 30px;
+        font-size: 18px;
+    }
+    .contact-paragraph {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .section img {
+        width: 40px;
+        height: 40px;
+    }
+    .footer-navigation h2 {
+        font-size: 17px;
+    }
+    .footer-navigation a {
+        font-size: 15px;
+    }
+    .footer-section :nth-child(1) {
+        font-size: 10px;
+    }
+    .footer-section :nth-child(2) {
+        font-size: 11px;
+    } 
+}       
+
+@media screen and (max-width: 1440px) {
+    .section {
+        width: 900px;
+        height: 500px;
+    }
+    .section h1 {
+        font-size: 26px;
+        margin-top: 60px;
+    }
+    .contact-number,
+    .contact-email,
+    .contact-fb {
+        margin: 20px;
+        gap: 30px;
+        font-size: 17px;
+    }
+    .contact-paragraph {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .section img {
+        width: 35px;
+        height: 35px;
+    }
+    .footer-navigation h2 {
+        font-size: 19px;
+    }
+    .footer-navigation a {
+        font-size: 15px;
+    }
+    .footer-section :nth-child(1) {
+        font-size: 12px;
+    }
+    .footer-section :nth-child(2) {
+        font-size: 13px;
+    } 
+}
+@media screen and (max-width: 1200px) {
+    .section h1 {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    .contact-number,
+    .contact-email,
+    .contact-fb {
+        margin: 20px;
+        gap: 30px;
+        font-size: 15px;
+    }
+    .contact-paragraph {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .section img {
+        width: 35px;
+        height: 35px;
+    }
+    .footer-navigation h2 {
+        font-size: 18px;
+    }
+    .footer-navigation a {
+        font-size: 14px;
+    }
+    .footer-section :nth-child(1) {
+        font-size: 10px;
+    }
+    .footer-section :nth-child(2) {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact-number,
+    .contact-email,
+    .contact-fb {
+        gap: 30px;
+        font-size: 14px;
+    }
+    .section {
+        width: 700px;
+        height: 500px;
+    }
+    .section h1 {
+        font-size: 23px;
+        margin-top: 60px;
+    }
+    .contact-paragraph {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .section img {
+        width: 30px;
+        height: 30px;
+    }
+    .footer-navigation h2 {
+        font-size: 17px;
+    }
+    .footer-navigation a {
+        font-size: 13px;
+    }
+    .footer-section :nth-child(1) {
+        font-size: 9px;
+    }
+    .footer-section :nth-child(2) {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-number,
+    .contact-email,
+    .contact-fb {
+        gap: 25px;
+        font-size: 13px;
+    }
+    .section {
+        width: 550px;
+        height: 450px;
+    }
+    .section h1 {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    .contact-paragraph {
+        font-size: 13px;
+    }
+    .section img {
+        width: 25px;
+        height: 25px;
+    }
+    .footer-navigation h2 {
+        font-size: 17px;
+    }
+    .footer-navigation a {
+        font-size: 13px;
+    }
+    .footer-section :nth-child(1) {
+        font-size: 9px;
+    }
+    .footer-section :nth-child(2) {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container {
+        height: 70vh;
+    }
+    .contact-number,
+    .contact-email,
+    .contact-fb {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        font-size: 12px;
+    }
+    .section {
+        width: 320px;
+        height: 400px;
+    }
+    .section h1 {
+        font-size: 13px;
+        margin-top: 40px;
+    }
+    .contact-paragraph {
+        font-size: 11px;
+    }
+    .section img {
+        width: 20px;
+        height: 20px;
+    }
+    .footer-navigation h2 {
+        font-size: 14px;
+    }
+    .footer-navigation a {
+        font-size: 10px;
+    }
+    .footer-section :nth-child(1) {
+        font-size: 6px;
+    }
+    .footer-section :nth-child(2) {
+        font-size: 7px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .contact-number,
+    .contact-email,
+    .contact-fb {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        gap: 10px;
+        font-size: 9px;
+    }
+    .section {
+        width: 270px;
+        height: 400x;
+    }
+    .section h1 {
+        font-size: 13px;
+        margin-top: 60px;
+        text-align: center;
+    }
+    .contact-paragraph {
+        font-size: 6px;
+    }
+    .section img {
+        width: 15px;
+        height: 15px;
+    }
+    .footer-navigation h2 {
+        font-size: 15px;
+    }
+    .footer-navigation a {
+        font-size: 9px;
+    }
+}
